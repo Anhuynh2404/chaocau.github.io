@@ -1,0 +1,115 @@
+.content {
+    position: relative;
+    z-index: 3;
+  }
+  #title {
+    font-weight: bold; /* T?o ch? ??m */
+    color: #333; /* Màu ch? t?i */
+    text-align: center; /* C?n gi?a ch? */
+    margin: 0 auto; /* ??m b?o c?n gi?a kh?i */
+    padding-top: 20px; /* T?o kho?ng tr?ng phía trên */
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ??m b?o kh?i wrapper chi?m toàn b? chi?u cao */
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 800px; /* Gi?i h?n ?? r?ng t?i ?a */
+    text-align: center; /* C?n gi?a v?n b?n trong content */
+    padding: 20px;
+  }
+  #no{
+    position: absolute;
+    display: inline-block;
+    left: 35%; 
+    top: 40vh;
+    -webkit-transition: all 0.1s ease-out;
+  }
+  #yes{
+    position: absolute;
+    display: inline-block;
+    left: 70%; 
+    top: 40vh;
+    -webkit-transition: all 0.3s ease-out;
+  }
+  #bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    /* height: 100vh; */
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg.webp);
+    background-size: cover;
+    background-position: 50%;
+    -webkit-filter: blur(4px);
+  }
+  
+.swal2-image{
+    object-fit: contain;
+  }
+  
+  .swal2-title, .swal2-content{
+    color: rgb(0, 0, 0) !important;
+  }
+  .swal2-popup {
+    border-radius: 15px !important;
+  }
+  
+  header h2 {
+    font-family: 'Pacifico';
+    font-size: 80px;
+    text-align: center;
+      margin-bottom: 30px;
+  }
+  header h4 {
+    font-family: 'Pacifico';
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    header h2 {
+      font-family: 'Pacifico';
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h4 {
+      font-family: 'Pacifico';
+      text-align: center;
+      padding: 15px;
+    }
+    #no{
+      position: absolute;
+      display: inline-block;
+      left: 7%; 
+      top: 40vh;
+      font-size: 14px;
+      padding: 3px;
+      -webkit-transition: all 0.1s ease-out;
+    }
+    #yes{
+      position: absolute;
+      display: inline-block;
+      left: 58%; 
+      top: 40vh;
+      font-size: 14px;
+      padding: 3px;
+      -webkit-transition: all 0.3s ease-out;
+    }
+  }
+  
+  .swal2-backdrop-show{
+    background-size: 200px 100px !important;
+  }
+  .custom-title {
+    color: red; /* Thay 'red' b?ng màu b?n mu?n */
+}
